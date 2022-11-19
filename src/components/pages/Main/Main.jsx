@@ -2,6 +2,7 @@ import React from 'react'
 import { MainContainer, Container } from './Main.style'
 import PowerButton from '../../PowerButton/PowerButton'
 import { LogoComponent } from '../../Logo'
+import { SocialIcons } from '../../SocialIcons'
 
 const Main = () => {
   return (
@@ -9,6 +10,7 @@ const Main = () => {
       <Container>
         <PowerButton />
         <LogoComponent />
+        <SocialIcons />
       </Container>
     </MainContainer>
   )
