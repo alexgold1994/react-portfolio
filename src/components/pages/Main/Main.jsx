@@ -7,20 +7,33 @@ import {
   Work,
   BottomBar,
   About,
-  Skills
+  Skills,
+  Center
 } from './Main.style'
 import PowerButton from '../../PowerButton/PowerButton'
 import { LogoComponent } from '../../Logo'
 import { SocialIcons } from '../../SocialIcons'
 import { motion } from 'framer-motion'
 import { routes } from '../../../routing/routes'
+import { YinYang } from '../../icons/Icons'
 
 const Main = () => {
   const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
 
   return (
     <MainContainer>
       <Container>
+        <Center click={click}>
+          <YinYang
+            onClick={() => handleClick()}
+            width={click ? 120 : 200}
+            height={click ? 120 : 200}
+            fill="currentColor"
+          />
+          <span>click here</span>
+        </Center>
+
         <PowerButton />
         <LogoComponent />
         <SocialIcons />
