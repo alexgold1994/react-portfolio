@@ -6,8 +6,9 @@ import { AppRoutes } from './routing/AppRoutes'
 function App() {
   return (
     <>
-      <ThemeProvider theme={lightTheme} />
-      <AppRoutes />
+      <ThemeProvider theme={lightTheme}>
+        <AppRoutes />
+      </ThemeProvider>
       <GlobalStyle />
     </>
   )

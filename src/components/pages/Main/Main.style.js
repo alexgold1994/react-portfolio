@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 export const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -29,7 +29,7 @@ export const Contact = styled(NavLink)`
   text-decoration: none;
   z-index: 1;
 `
-export const BLOG = styled(NavLink)`
+export const Blog = styled(NavLink)`
   color: ${(props) => props.theme.text};
   position: absolute;
   top: 50%;
@@ -38,7 +38,7 @@ export const BLOG = styled(NavLink)`
   text-decoration: none;
   z-index: 1;
 `
-export const WORK = styled(NavLink)`
+export const Work = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
   top: 50%;
@@ -58,12 +58,12 @@ export const BottomBar = styled.div`
   justify-content: space-evenly;
 `
 
-export const ABOUT = styled(NavLink)`
+export const About = styled(NavLink)`
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   text-decoration: none;
   z-index: 1;
 `
-export const SKILLS = styled(NavLink)`
+export const Skills = styled(NavLink)`
   color: ${(props) => props.theme.text};
   text-decoration: none;
   z-index: 1;
