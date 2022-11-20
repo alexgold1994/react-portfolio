@@ -5,6 +5,7 @@ import PowerButton from '../../PowerButton/PowerButton'
 import { SocialIcons } from '../../SocialIcons'
 import { BlogItem } from './index'
 import { Blogs } from '../../../data/BlogData'
+import { AnchorComponent } from '../../Anchor'
 
 // Framer-motion config
 const container = {
@@ -41,7 +42,7 @@ export const Blog = () => {
         <LogoComponent />
         <PowerButton />
         <SocialIcons />
-        {/*    <AnchorComponent number={numbers}/> */}
+        <AnchorComponent number={numbers} />
         <Center>
           <Grid>
             {Blogs.map((blog) => {
