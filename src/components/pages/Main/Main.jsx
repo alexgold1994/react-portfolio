@@ -11,7 +11,7 @@ import {
   Center,
   DarkSide
 } from './Main.style'
-import PowerButton from '../../PowerButton/PowerButton'
+import { PowerButton } from '../../PowerButton'
 import { LogoComponent } from '../../Logo'
 import { SocialIcons } from '../../SocialIcons'
 import { motion } from 'framer-motion'

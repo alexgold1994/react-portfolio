@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { Power } from './PowerButton.style'
 import { PowerBtn } from '../icons/Icons'
 
-const PowerButton = () => {
+export const PowerButton = () => {
   return (
     <Power>
       <NavLink to="/">
@@ -12,5 +12,3 @@ const PowerButton = () => {
     </Power>
   )
 }
-
-export default PowerButton

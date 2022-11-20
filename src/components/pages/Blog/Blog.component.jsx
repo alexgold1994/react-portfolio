@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { MainContainer, Container, Center, Grid } from './Blog.style'
 import { LogoComponent } from '../../Logo'
-import PowerButton from '../../PowerButton/PowerButton'
+import { PowerButton } from '../../PowerButton'
 import { SocialIcons } from '../../SocialIcons'
 import { BlogItem } from './index'
 import { Blogs } from '../../../data/BlogData'
