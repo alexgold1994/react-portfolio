@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -101,7 +101,7 @@ export const Center = styled.button`
   }
 `
 
-export const DarkDiv = styled.div`
+export const DarkSide = styled.div`
   position: absolute;
   top: 0;
   background-color: #000;

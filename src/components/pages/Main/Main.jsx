@@ -8,7 +8,8 @@ import {
   BottomBar,
   About,
   Skills,
-  Center
+  Center,
+  DarkSide
 } from './Main.style'
 import PowerButton from '../../PowerButton/PowerButton'
 import { LogoComponent } from '../../Logo'
@@ -16,6 +17,7 @@ import { SocialIcons } from '../../SocialIcons'
 import { motion } from 'framer-motion'
 import { routes } from '../../../routing/routes'
 import { YinYang } from '../../icons/Icons'
+import { Intro } from '../../Intro'
 
 const Main = () => {
   const [click, setClick] = useState(false)
@@ -24,9 +26,9 @@ const Main = () => {
   return (
     <MainContainer>
       <Container>
-        <Center click={click}>
+        <DarkSide click={click}></DarkSide>
+        <Center click={click} onClick={() => handleClick()}>
           <YinYang
-            onClick={() => handleClick()}
             width={click ? 120 : 200}
             height={click ? 120 : 200}
             fill="currentColor"
@@ -35,8 +37,8 @@ const Main = () => {
         </Center>
 
         <PowerButton />
-        <LogoComponent />
-        <SocialIcons />
+        <LogoComponent theme={click ? 'dark' : 'light'} />
+        <SocialIcons theme={click ? 'dark' : 'light'} />
 
         <Contact
           target="_blank"
@@ -124,6 +126,7 @@ const Main = () => {
           </Skills>
         </BottomBar>
       </Container>
+      {click && <Intro />}
     </MainContainer>
   )
 }
