@@ -6,6 +6,7 @@ import { SocialIcons } from '../../SocialIcons'
 import { BlogItem } from './index'
 import { Blogs } from '../../../data/BlogData'
 import { AnchorComponent } from '../../Anchor'
+import { BigTitle } from '../../BigTitle'
 
 // Framer-motion config
 const container = {
@@ -50,7 +51,7 @@ export const Blog = () => {
             })}
           </Grid>
         </Center>
-        {/* <BigTitle text="BLOG" top="5rem" left="5rem" /> */}
+        <BigTitle text="BLOG" top="5rem" left="5rem" />
       </Container>
     </MainContainer>
   )

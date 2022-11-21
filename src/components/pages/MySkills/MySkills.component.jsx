@@ -8,6 +8,7 @@ import { SocialIcons } from '../../SocialIcons'
 import { PowerButton } from '../../PowerButton'
 import { SkillsBlock } from './index'
 import { ParticleComponent } from '../../Particle'
+import { BigTitle } from '../../BigTitle'
 
 const skills = {
   frontend: {
@@ -39,7 +40,7 @@ export const MySkills = () => {
         <SkillsBlock skills={skills.backend} />
         <SkillsBlock skills={skills.frontend} />
 
-        {/*  <BigTitle text="SKILLS" top="80%" right="30%" /> */}
+        <BigTitle text="SKILLS" top="80%" right="30%" />
       </Box>
     </ThemeProvider>
   )

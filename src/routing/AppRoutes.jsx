@@ -1,9 +1,9 @@
 import { Route, Switch } from 'react-router-dom'
 import Main from '../components/pages/Main/Main'
-import About from '../components/pages/About/About'
+import { About } from '../components/pages/About'
 import { Blog } from '../components/pages/Blog'
 import { MySkills } from '../components/pages/MySkills'
-import Works from '../components/pages/Works/Works'
+import { Works } from '../components/pages/Works'
 import { routes } from './routes'
 
 export function AppRoutes() {
