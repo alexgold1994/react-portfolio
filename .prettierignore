@@ -1,0 +1,7 @@
+_coverage
+build
+public
+README.md
+.eslintrc.js
+.gitlab-ci.yml
+.github/
